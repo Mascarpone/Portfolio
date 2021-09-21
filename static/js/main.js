@@ -26,7 +26,7 @@ function konamiCode() {
     });
 
     function activateCheats() {
-      alert("cheats activated");
+      $('#konami').modal('show');
     }
 }
 
