@@ -9,6 +9,10 @@ contacts:
   linkedin: https://www.linkedin.com/in/flevern/
   mail: levern.florian.net@gmail.com
 me: index.png
+summary: |
+  Backend Developer. 5 years of experience in web development.
+  I work for the design and implementation of application solutions
+  using an agile development framework and DevOps principles.
 konami:
   image: me.jpeg
   message: |
@@ -22,11 +26,17 @@ jobs:
     company: Accenture
     logo: accenture.png
     location: Paris, France
+    role: Technical Referent
     description:
-      - |
-        I did some stuff
-      - |
-        And some other stuff
+      - 🎯 Provide technical leadership to project resources and the client to meet deadlines and ensure project goals are met.
+      - ✍🏻 Design and develop cost effective solutions that meet functional, technical and performance requirements.
+      - 📦 Supervise the delivery and deployment in production of an application.
+      - 🔭 Trigger the renovation, simplification and automation of processes and tools.
+      - 🎤 Lead technical and functional presentations.
+      -
+      - 📱 Worked for Orange for the fullstack Java development of the consumer order taking application and APIs in an Agile team of 80 people.
+      - 🚗 Worked for Renault-Nissan UK for the design and development of cloud infrastructure and continuous deployment process in AWS ECS.
+      - 💳 Worked for BNP Paribas for the implementation of AI APIs for signature detection on contractual documents.
     certs:
       - name: GitLab Certified Associate
         date: May 2021
@@ -55,16 +65,16 @@ jobs:
     company: Mappy
     logo: mappy.png
     location: Boulogne-Billancourt, France
+    role: Python Backend Developer
     description:
-      - Internship and then hired as a developer.
-      - Active participation in the Scrum method, preparation of sprint plannings, scrums of scrum, JIRAs.
-      - In charge of the evolution and maintenance of 4 search engine APIs using Apache Solr.
-      - Conception and development of the auto-completion, making the use of this service rise from 35% in August 2017 to 64% in June 2018.
-      - Establishment of internal tools for testing, statistics and monitoring.
-      - Organization and redesign of data update processes with developments in JAVA and SQL.
-      - As a DevOps, evolution of internal scripts of continuous integration and continuous delivery.
-      - Technology watch, competitive studies and knowledge transfer on the principles and uses of Machine Learning.
-      - Acquired skills in geomatics, I became a contributor to the open data project OpenStreetMap and participated in events about geography (Foss4g, SOTM).
+      - 🔎 In charge of the evolution and maintenance of 4 search engine APIs using Apache Solr.
+      - 📈 Conception and development of the auto-completion, making the use of this service rise from 35% in August 2017 to 64% in June 2018.
+      - 🗄 Organization and redesign of data update processes with developments in Java and SQL.
+      - 🔬 Establishment of internal tools for testing, statistics and monitoring.
+      - ⚙️ Improvements of DevOps scripts for continuous integration and continuous delivery.
+      - 📢 Active participation in the Scrum method, preparation of sprint plannings, scrums of scrum, stories.
+      - 🖊 Contributions for open source libraries and open data projects.
+      - 🗺 Acquired skills in geomatics and participated in events about geography (Foss4g, SOTM).
     technos:
       - python
       - postgres

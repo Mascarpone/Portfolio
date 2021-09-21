@@ -383,6 +383,7 @@ ul#index-navbar li {
 .timeline .desc {
   padding-top: 1em;
   margin-left: 15.5em;
+  max-width: 55%;
 }
 
 .timeline .mini .bullet {
