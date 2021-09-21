@@ -28,7 +28,31 @@
 
 {% block content %}
 <div class="row">
-    <img id="index-image" class="noselect" src="static/images/front.png" alt=""/>
+    <img id="index-image" class="noselect" src="static/images/{{ introduction['me'] }}" alt="me" />
+    <div id="introduction" class="col-xs-12 col-sm-6 col-sm-offset-3">
+        {{ introduction['description'] }}
+    </div>
+    {% if contacts %}
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <ul class="social pull-right">
+            {% set social_list = [
+              (contacts.get('mail'), 'fa fa-envelope-o', 'mail-icon', 'Email'),
+              (contacts.get('linkedin'), 'fa fa-linkedin', 'linkedin-icon', 'LinkedIn'),
+              (contacts.get('github'), 'fa fa-github', 'git-icon', 'GitHub'),
+              ] -%}
+
+            {% for url, icon, style, name in social_list %}
+                {% if url %}
+                <a {% if name == 'Email' %} href="mailto:{{ url|e }}?Subject=[PORTFOLIO] Nice to meet you" {% else %} target="_blank" href="{{ url|e }}" {% endif %}>
+                    <li class="{{ style }} circle">
+                        <i class="{{ icon }}" alt="{{ name }}"></i>
+                    </li>
+                </a>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
 </div>
 {% endblock %}
 

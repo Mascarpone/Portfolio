@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% set active_page = "interests" %}
+{% block title %}Interests{% endblock %}
+
+{% macro render_card(card) %}
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+    <div class="row card">
+      <h4>{{ card['emoji'] }} &nbsp; {{ card['name'] }}</h4>
+      <div class="content">
+        {% if card['image'] %}
+        <img class="col-xs-4" src="{{ 'static/images/interests/' + card['image'] }}" alt="">
+        {% endif %}
+        {% if card['description'] %}
+        <div class="{% if card['image'] %}col-xs-8{% else %}col-xs-12{% endif %} desc">{{ card['description'] }}</div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+{% endmacro %}
+
+{% block content %}
+<div class="row">
+  <h3>I love</h3>
+</div>
+<div class="row" data-masonry='{"percentPosition": true }'>
+  {% for card in interests['loved'] %}
+  {{ render_card(card) }}
+  {% endfor %}
+</div>
+<div class="row">
+  <h3>I hate</h3>
+</div>
+<div class="row" data-masonry='{"percentPosition": true }'>
+  {% for card in interests['hated'] %}
+  {{ render_card(card) }}
+  {% endfor %}
+</div>
+{% endblock %}
+
+{% block scripts %}
+  {{ super() }}
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+{% endblock %}

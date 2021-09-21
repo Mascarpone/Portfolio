@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+{% set active_page = "career" %}
+{% block title %}Career{% endblock %}
+{% block content %}
+
+<div class="col-xs-12 timeline">
+  <ul class="dots">
+    <li style="height: 1em;"></li>
+  </ul>
+
+  <ul>
+    {% for job in jobs %}
+    <li>
+      <div class="time">{{ job['period'] }}</div>
+      <div class="bullet">
+        <img class="noselect img-circle img-thumbnail" src="{{ 'static/images/career/' + job['logo'] }}" alt="" title="{{ job['company'] }}" />
+      </div>
+      <div class="title">
+        <h3>{{ job['company'] }}</h3>
+        <h4>{{ job['location'] }}</h4>
+      </div>
+    </li>
+
+    {% for cert in job['certs'] %}
+    <li class="mini">
+      <div class="time">{{ cert['date'] }}</div>
+      <div class="bullet">
+        <div class="inner"></div>
+      </div>
+      <div class="desc">
+        <h3>{{ cert['name'] }}</h3>
+        <img class="cert" src="{{ 'static/images/career/' + cert['logo'] }}" alt="" />
+      </div>
+    </li>
+    {% endfor %}
+
+    <li class="desc">
+      {% for info in job['description'] %}
+        {{ info if info }}<br />
+      {% endfor %}
+    </li>
+
+    <li class="desc techno">
+      <ul class="list-inline">
+      {% for techno in job['technos'] %}
+      <li><img src="{{ 'static/images/career/technos/' + techno + '.png' }}" alt="{{ techno }}" title="{{ techno }}" /></li>
+      {% endfor %}
+      </ul>
+    </li>
+
+    <li class="spacer"></li>
+    {% endfor %}
+  </ul>
+
+  <ul class="dots">
+    <li style="height: 1em;"></li>
+  </ul>
+</div>
+
+{% endblock %}

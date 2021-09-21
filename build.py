@@ -12,6 +12,21 @@ class Data:
             for data in yaml.safe_load_all(documents):
                 self.doc[data["document"]] = data
 
+    def get_introduction(self):
+        return self.doc["introduction"]
+
+    def get_contacts(self):
+        return self.doc["introduction"].get("contacts")
+
+    def get_konami(self):
+        return self.doc["introduction"].get("konami")
+
+    def get_jobs(self):
+        return self.doc["career"]["jobs"]
+
+    def get_diploma(self):
+        return self.doc["schools"]["diploma"]
+
     def get_schools(self):
         return self.doc["schools"]["schools"]
 
@@ -21,22 +36,35 @@ class Data:
     def get_projects(self):
         return self.doc["projects"]["projects"]
 
+    def get_interests(self):
+        return self.doc["interests"]
+
     def get_document(self, docname):
         return self.doc.get(docname)
 
 
 def build_static_website(data, src, dst):
+    vars = {
+        "konami": data.get_konami(),
+        "introduction": data.get_introduction(),
+        "contacts": data.get_contacts(),
+        "jobs": data.get_jobs(),
+        "interests": data.get_interests(),
+        "diploma": data.get_diploma(),
+        "schools": data.get_schools(),
+        "projects": data.get_projects(),
+    }
+
     env = Environment(loader=PackageLoader(src), autoescape=select_autoescape())
-    env.get_template("index.html").stream().dump(f"{dst}/index.html")
-    env.get_template("resume.html").stream().dump(f"{dst}/resume.html")
-    env.get_template("contact.html").stream().dump(f"{dst}/contact.html")
-    env.get_template("education.html").stream(
-        schools=data.get_schools(), projects=data.get_projects()
-    ).dump(f"{dst}/education.html")
+    env.get_template("index.html").stream(**vars).dump(f"{dst}/index.html")
+    env.get_template("career.html").stream(**vars).dump(f"{dst}/career.html")
+    env.get_template("interests.html").stream(**vars).dump(f"{dst}/interests.html")
+    env.get_template("education.html").stream(**vars).dump(f"{dst}/education.html")
     env.get_template("grades.html").stream().dump(f"{dst}/grades.html")
     for gradesdoc in data.get_grades_documents():
         env.get_template("grades.html").stream(
-            grades=data.get_document(gradesdoc)
+            **vars,
+            grades=data.get_document(gradesdoc),
         ).dump(f"{dst}/grades-{gradesdoc}.html")
 
 

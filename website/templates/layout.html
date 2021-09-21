@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="portfolio, flevern, Florian, Enseirb, Informatique, Le Vern">
+    <meta name="keywords" content="portfolio, flevern, Florian, Enseirb, Mappy, Accenture, Petichef, Informatique, Le Vern">
     <meta name="description" content="Florian Le Vern Portfolio">
     <meta name="author" content="flevern">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -18,11 +18,7 @@
     {% endblock %}
   </head>
 
-  {% set navigation_bar = [
-    ('/education', 'education', 'Education'),
-    ('/resume', 'resume', 'Resume'),
-    ('/contact', 'contact', 'Contact')
-  ] -%}
+  {% set navigation_bar = ['career', 'education', 'interests'] -%}
   {% set active_page = active_page|default('index') -%}
 
   <body data-spy="scroll" data-target="#scrollspy" data-offset="15">
@@ -40,8 +36,8 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="noselect" href="index.html">
-              <div id="title-container">
+            <div id="title-container">
+              <a class="noselect" href="index.html">
                 <div id="halfclip">
                   <div class="halfcircle" id="clipped"></div>
                 </div>
@@ -49,22 +45,28 @@
                 <div id="text" class="noselect">
                   Flv
                 </div>
-              </div>
-            </a>
+              </a>
+            </div>
           </div>
           {% endblock %}
           {% block navbar %}
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
               {% block navbar_list %}
-              {% for route, view, caption in navigation_bar %}
-              <li{% if route == active_page %} class="active"{% endif %}>
-              <a href="{{ view }}.html" class="nav-{{ view }}">{{ caption }}</a>
-            </li>
-            {% endfor %}
-            {% endblock %}
+              {% for view in navigation_bar %}
+              <li{% if view == active_page %} class="active"{% endif %}>
+                <a href="{{ view }}.html" class="nav-{{ view }}">{{ view.capitalize() }}</a>
+              </li>
+              {% endfor %}
+              {% endblock %}
+              <!-- <li>
+                <a target="_blank" href="static/images/cv.pdf" class="nav-resume">
+                  Resume
+                  <i class="fa fa-external-link fa-fw" style="font-size: 0.7em;" aria-hidden="true"></i>
+                </a>
+              </li> -->
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
         {% endblock %}
       </div>
     </nav>
@@ -101,6 +103,25 @@
   </div>
 
   {% block modal %}
+  {% if konami %}
+  <div class="modal fade" id="konami" tabindex="-1" role="dialog" aria-labelledby="modal-label" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Cheats activated</h4>
+        </div>
+        <div class="modal-body" style="height: 13.5em;">
+          <img class="col-xs-4 thumbnail" style="margin: 0;" src="{{ 'static/images/' + konami['image'] }}" alt="">
+          <div class="col-xs-8 desc">{{ konami['message'] }}</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endif %}
   {% endblock %}
 
   {% block scripts %}
