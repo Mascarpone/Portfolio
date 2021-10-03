@@ -2,8 +2,8 @@
 document: introduction
 
 description: |
-  👋🏻 Hi! I'm Florian. I am a software engineer convinced by the DevOps and Agile principles.
-  Welcome to my portfolio website, here is where I keep track of the work I did.
+  👋🏻 Hi! I'm Florian. I am a software engineer convinced by DevOps and Agile principles.
+  Welcome to my portfolio website, where I keep track of the work I did.
 contacts:
   github: https://github.com/Mascarpone
   linkedin: https://www.linkedin.com/in/flevern/
@@ -28,15 +28,15 @@ jobs:
     location: Paris, France
     role: Technical Referent
     description:
-      - 🎯 Provide technical leadership to project resources and the client to meet deadlines and ensure project goals are met.
+      - 🎯 Provide technical leadership to project teams and clients to ensure project goals are met.
       - ✍🏻 Design and develop cost effective solutions that meet functional, technical and performance requirements.
       - 📦 Supervise the delivery and deployment in production of an application.
       - 🔭 Trigger the renovation, simplification and automation of processes and tools.
       - 🎤 Lead technical and functional presentations.
       -
-      - 📱 Worked for Orange for the fullstack Java development of the consumer order taking application and APIs in an Agile team of 80 people.
-      - 🚗 Worked for Renault-Nissan UK for the design and development of cloud infrastructure and continuous deployment process in AWS ECS.
-      - 💳 Worked for BNP Paribas for the implementation of AI APIs for signature detection on contractual documents.
+      - 📱 Worked for Orange on the fullstack Java development of the consumer order taking application and APIs in an Agile team of 80 people.
+      - 🚗 Worked for Renault-Nissan UK on the design and development of cloud infrastructure and continuous deployment process in AWS ECS.
+      - 💳 Worked for BNP Paribas on the implementation of AI APIs for signature detection on contractual documents.
     certs:
       - name: GitLab Certified Associate
         date: May 2021
@@ -73,8 +73,8 @@ jobs:
       - 🔬 Establishment of internal tools for testing, statistics and monitoring.
       - ⚙️ Improvements of DevOps scripts for continuous integration and continuous delivery.
       - 📢 Active participation in the Scrum method, preparation of sprint plannings, scrums of scrum, stories.
-      - 🖊 Contributions for open source libraries and open data projects.
-      - 🗺 Acquired skills in geomatics and participated in events about geography (Foss4g, SOTM).
+      - 🖊 Contributions to open source libraries and open data projects.
+      - 🗺 Acquisition of skills in geomatics and participation in events about geography (Foss4g, SOTM).
     technos:
       - python
       - postgres
@@ -717,8 +717,8 @@ loved:
     image: food.jpeg
     description: |
       I cook complicated dishes or cakes from time to time, a passion
-      that I share this passion with my mother and my brother. We go around the good
-      restaurants with my wife wherever we go.
+      that I share with my mother and my brother. We love to go around the good
+      restaurants with my wife too.
   - emoji: ✈️
     name: travelling
     image: onsen.jpeg
@@ -729,7 +729,7 @@ loved:
     name: manual activities
     image: embroidery.JPG
     description: |
-      I do embroidery, drawing, painting ...
+      I do embroidery, drawing, painting.
   - emoji: 🕹
     name: games
     description: |
