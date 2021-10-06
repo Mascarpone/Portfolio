@@ -61,6 +61,7 @@ jobs:
       - aws
       - gcp
       - jira
+
   - period: 2017 - 2019
     company: Mappy
     logo: mappy.png
@@ -401,7 +402,8 @@ document: schools
 
 diploma: Computer Science Engineer - 2nd of the promotion
 schools:
-  - name: UCSC 🇺🇸
+  - name: UCSC
+    country: 🇺🇸
     date: 2016 - 2017
     img: ucsc.png
     summary: UC Santa Cruz is a public university like no other in California. I am spending here my last academic semester in the Computer Science department as an exchange student.
@@ -412,8 +414,11 @@ schools:
     color: 49ac2e
     corner-color: 79d260
 
-  - name: ENSEIRB-MATMECA 🇫🇷 🇯🇵
+  - name: ENSEIRB-MATMECA
+    country: 🇫🇷 🇯🇵 🇺🇸
+    graduate: true
     date: 2014 - 2017
+    location: Bordeaux, France
     img: enseirb.jpg
     summary: ENSEIRB-MATMECA is a public French Grande Ecole training engineers to take up the major challenges of the 21st century. I enrolled here in the Computer Science department.
     description: The main objectives of the Computer Science department are to teach theoretical and technical foundations of computing, thus enabling its students to take part in project management and IT in the corporate world. At the end of their studies, the students dispose all the necessary skills for Software Development and have basis about some specific topics. I chose to study Information Theory, Distributed Systems, Security of Information Systems, Quantum Information and Robotics.
@@ -429,7 +434,8 @@ schools:
     color: 4c6fe0
     corner-color: 7e9af5
 
-  - name: Lycée Lakanal 🇫🇷
+  - name: Lycée Lakanal
+    country: 🇫🇷
     date: 2012 - 2014
     img: lakanal.jpg
     summary: The Lycée Lakanal is a French Higher School Preparatory Classes where I spent two very intensive years studying principally Mathematics and Physics.

@@ -50,6 +50,22 @@
 
     <li class="spacer"></li>
     {% endfor %}
+
+    {% if gradschool %}
+    <li>
+      <div class="time">{{ gradschool['date'].split()[-1] }}</div>
+      <div class="bullet">
+        <img class="noselect img-circle img-thumbnail" src="static/images/schools/diploma.png" alt="" title="{{ gradschool['name'] }}" />
+      </div>
+      <div class="title">
+        <h3>{{ diploma.split('-')[0] }} at {{ gradschool['name'] }}</h3>
+        <h4>{{ gradschool['location'] }}</h4>
+        <h4>More details on the <a href="education.html">Education page</a></h4>
+      </div>
+    </li>
+
+    <li class="spacer"></li>
+    {% endif %}
   </ul>
 
   <ul class="dots">

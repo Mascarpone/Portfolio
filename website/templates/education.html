@@ -24,7 +24,7 @@
     <li id="{{ school['name'].replace(' ', '_') }}">
       <div class="front">
         <div class="school-period">{{ school['date'] }}</div>
-        <div class="school-title">{{ school['name'] }}</div>
+        <div class="school-title">{{ school['name'] }} {{ school['country'] }}</div>
         <img class="school-img" src="{{ 'static/images/schools/' + school['img'] }}" alt="image de l'école avec logo" />
         <div class="school-summary">{{ school['summary'] }}</div>
         <div class="showmore-button">Show more<i class="fa fa-chevron-left"></i></div>
