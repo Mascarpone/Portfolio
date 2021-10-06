@@ -843,6 +843,7 @@ ul#school-list > li .school-projects > ul > li > a:hover { text-decoration: none
   .timeline > ul.dots::before { left: 2em; }
   .timeline .title { padding-top: 0; margin-left: 1em; }
   .timeline .time { width: 0; padding: 0; text-align: center; writing-mode: tb; font-size: 9px; }
+  .timeline .diploma-time { padding-top: 3em; }
   .timeline .bullet { width: 3.5em; height: 3.5em; }
   .timeline .desc { margin-left: 4.75em; font-size: 11px; }
   .timeline .mini .time { padding-top: 1em; padding-right: 0.4em; }
@@ -884,6 +885,7 @@ ul#school-list > li .school-projects > ul > li > a:hover { text-decoration: none
   .timeline > ul::before { left: 2.75em; }
   .timeline > ul.dots::before { left: 2.75em; }
   .timeline .time { width: 0; padding-right: 0; padding-top: 1em; text-align: center; writing-mode: tb; font-size: 9px; }
+  .timeline .diploma-time { padding-top: 3em; }
   .timeline .mini .time { padding-top: 2.5em; padding-right: 1.5em; }
   .timeline .mini .bullet { margin-left: 1em; margin-right: 1em; }
   .timeline .cert { height: 2em; margin: 0; }
@@ -938,6 +940,7 @@ ul#school-list > li .school-projects > ul > li > a:hover { text-decoration: none
   .timeline > ul.dots::before { left: 12.5em; }
   .timeline .bullet { width: 5em; height: 5em; }
   .timeline .time { width: 9em; padding-top: 2.5em; padding-right: 2.5em; font-size: 12px; writing-mode: lr; }
+  .timeline .diploma-time { padding-top: 2.5em; }
   .timeline .desc { padding-top: 1em; margin-left: 15.5em; }
   .timeline .mini .bullet { margin-top: 2.25em; margin-left: 2em; margin-right: 2em; }
   .timeline .title { padding-top: 1em; margin-left: 2em; }
