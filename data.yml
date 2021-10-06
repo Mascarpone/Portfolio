@@ -89,6 +89,22 @@ jobs:
 document: projects
 
 projects:
+  - name: Petichef
+    date: May 2021 - Now
+    context: This is the personal project I have always wanted to do ...
+    subject: |
+             It is phone application that helps families schedule healthy meals.
+             Coming soon ...
+    links:
+      - caption: FastAPI
+        url: https://fastapi.tiangolo.com
+      - caption: Swift
+        url: https://developer.apple.com/swift/
+      - caption: GCP
+        url: https://developer.apple.com/swift/
+      - caption: GitHub Actions
+        url: https://github.com/features/actions
+
   - name: Kaggle Competition
     date: Mar 2017
     context: At the end of the Machine Learning class at UCSC, I was asked to apply the knowledge I had acquired on a "real-world" project. Thus, I had to find and define an experimental project that would complete the weekly ones that we had to do during the quarter. I chose to tackle a Kaggle Competition about image recognition as my internship in Japan rose my interest in Computer Vision.
@@ -384,7 +400,7 @@ document: schools
 
 diploma: Computer Science Engineer - 2nd of the promotion
 schools:
-  - name: UCSC
+  - name: UCSC 🇺🇸
     date: 2016 - 2017
     img: ucsc.png
     summary: UC Santa Cruz is a public university like no other in California. I am spending here my last academic semester in the Computer Science department as an exchange student.
@@ -395,7 +411,7 @@ schools:
     color: 49ac2e
     corner-color: 79d260
 
-  - name: ENSEIRB-MATMECA
+  - name: ENSEIRB-MATMECA 🇫🇷 🇯🇵
     date: 2014 - 2017
     img: enseirb.jpg
     summary: ENSEIRB-MATMECA is a public French Grande Ecole training engineers to take up the major challenges of the 21st century. I enrolled here in the Computer Science department.
@@ -412,7 +428,7 @@ schools:
     color: 4c6fe0
     corner-color: 7e9af5
 
-  - name: Lycée Lakanal
+  - name: Lycée Lakanal 🇫🇷
     date: 2012 - 2014
     img: lakanal.jpg
     summary: The Lycée Lakanal is a French Higher School Preparatory Classes where I spent two very intensive years studying principally Mathematics and Physics.
