@@ -60,6 +60,7 @@ def build_static_website(data, src, dst):
     env.get_template("career.html").stream(**vars).dump(f"{dst}/career.html")
     env.get_template("interests.html").stream(**vars).dump(f"{dst}/interests.html")
     env.get_template("education.html").stream(**vars).dump(f"{dst}/education.html")
+    env.get_template("projects.html").stream(**vars).dump(f"{dst}/projects.html")
     env.get_template("grades.html").stream().dump(f"{dst}/grades.html")
     for gradesdoc in data.get_grades_documents():
         env.get_template("grades.html").stream(

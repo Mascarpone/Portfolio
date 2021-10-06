@@ -91,19 +91,20 @@ document: projects
 projects:
   - name: Petichef
     date: May 2021 - Now
-    context: This is the personal project I have always wanted to do ...
+    context: This is the personal project I have always wanted to do. Coming soon ...
     subject: |
-             It is phone application that helps families schedule healthy meals.
-             Coming soon ...
+             It is a phone application that helps families schedule healthy meals.
     links:
       - caption: FastAPI
         url: https://fastapi.tiangolo.com
       - caption: Swift
         url: https://developer.apple.com/swift/
       - caption: GCP
-        url: https://developer.apple.com/swift/
+        url: https://cloud.google.com
       - caption: GitHub Actions
         url: https://github.com/features/actions
+    screenshots:
+      - petichef/wip.png
 
   - name: Kaggle Competition
     date: Mar 2017
