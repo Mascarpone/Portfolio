@@ -7,7 +7,8 @@ description: |
 contacts:
   github: https://github.com/Mascarpone
   linkedin: https://www.linkedin.com/in/flevern/
-  mail: levern.florian.net@gmail.com
+  mail-user: ten.nairolf.nrevel
+  mail-domain: moc.liamg
 me: index.png
 summary: |
   Backend Developer. 5 years of experience in web development.
@@ -61,6 +62,7 @@ jobs:
       - aws
       - gcp
       - jira
+
   - period: 2017 - 2019
     company: Mappy
     logo: mappy.png
@@ -89,6 +91,23 @@ jobs:
 document: projects
 
 projects:
+  - name: Petichef
+    date: May 2021 - Now
+    context: This is the personal project I have always wanted to do. Coming soon ...
+    subject: |
+             It is a phone application that helps families schedule healthy meals.
+    links:
+      - caption: FastAPI
+        url: https://fastapi.tiangolo.com
+      - caption: Swift
+        url: https://developer.apple.com/swift/
+      - caption: GCP
+        url: https://cloud.google.com
+      - caption: GitHub Actions
+        url: https://github.com/features/actions
+    screenshots:
+      - petichef/wip.png
+
   - name: Kaggle Competition
     date: Mar 2017
     context: At the end of the Machine Learning class at UCSC, I was asked to apply the knowledge I had acquired on a "real-world" project. Thus, I had to find and define an experimental project that would complete the weekly ones that we had to do during the quarter. I chose to tackle a Kaggle Competition about image recognition as my internship in Japan rose my interest in Computer Vision.
@@ -385,6 +404,7 @@ document: schools
 diploma: Computer Science Engineer - 2nd of the promotion
 schools:
   - name: UCSC
+    country: 🇺🇸
     date: 2016 - 2017
     img: ucsc.png
     summary: UC Santa Cruz is a public university like no other in California. I am spending here my last academic semester in the Computer Science department as an exchange student.
@@ -396,7 +416,10 @@ schools:
     corner-color: 79d260
 
   - name: ENSEIRB-MATMECA
+    country: 🇫🇷 🇯🇵 🇺🇸
+    graduate: true
     date: 2014 - 2017
+    location: Bordeaux, France
     img: enseirb.jpg
     summary: ENSEIRB-MATMECA is a public French Grande Ecole training engineers to take up the major challenges of the 21st century. I enrolled here in the Computer Science department.
     description: The main objectives of the Computer Science department are to teach theoretical and technical foundations of computing, thus enabling its students to take part in project management and IT in the corporate world. At the end of their studies, the students dispose all the necessary skills for Software Development and have basis about some specific topics. I chose to study Information Theory, Distributed Systems, Security of Information Systems, Quantum Information and Robotics.
@@ -413,6 +436,7 @@ schools:
     corner-color: 7e9af5
 
   - name: Lycée Lakanal
+    country: 🇫🇷
     date: 2012 - 2014
     img: lakanal.jpg
     summary: The Lycée Lakanal is a French Higher School Preparatory Classes where I spent two very intensive years studying principally Mathematics and Physics.

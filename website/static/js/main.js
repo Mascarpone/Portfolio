@@ -93,6 +93,13 @@ function scrollspyHandler() {
   });
 }
 
+function sendTo(obf) {
+  let subject = "?Subject=[PORTFOLIO] Nice to meet you";
+  let dest = obf.dataset.website + '\u0040' + obf.dataset.user;
+  let reverse = dest.split("").reverse().join("");
+  window.location.href = "mailto:" + reverse + subject;
+}
+
 function ready() {
   schoolsAnimation();
   scrollspyHandler();

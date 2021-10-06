@@ -30,6 +30,9 @@ class Data:
     def get_schools(self):
         return self.doc["schools"]["schools"]
 
+    def get_graduate_school(self):
+        return next((s for s in self.get_schools() if s.get("graduate")), None)
+
     def get_grades_documents(self):
         return (g["gradesfile"] for s in self.get_schools() for g in s["grades"])
 
@@ -49,6 +52,7 @@ def build_static_website(data, src, dst):
         "introduction": data.get_introduction(),
         "contacts": data.get_contacts(),
         "jobs": data.get_jobs(),
+        "gradschool": data.get_graduate_school(),
         "interests": data.get_interests(),
         "diploma": data.get_diploma(),
         "schools": data.get_schools(),
@@ -60,6 +64,7 @@ def build_static_website(data, src, dst):
     env.get_template("career.html").stream(**vars).dump(f"{dst}/career.html")
     env.get_template("interests.html").stream(**vars).dump(f"{dst}/interests.html")
     env.get_template("education.html").stream(**vars).dump(f"{dst}/education.html")
+    env.get_template("projects.html").stream(**vars).dump(f"{dst}/projects.html")
     env.get_template("grades.html").stream().dump(f"{dst}/grades.html")
     for gradesdoc in data.get_grades_documents():
         env.get_template("grades.html").stream(
