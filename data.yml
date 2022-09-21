@@ -23,19 +23,35 @@ konami:
 document: career
 
 jobs:
-  - period: 2019 - Today
+  - period: 2022 - Today
+    company: Netatmo
+    logo: netatmo.png
+    location: Remote
+    role: Freelance Backend Developer
+    description:
+      - 📱 Design new smart home features with apps and embedded teams.
+      - 🔧 Implement communication APIs for Legrand smart home devices.
+      - 🏆 Recruit and onboard new developers.
+    technos:
+      - typescript
+      - nodejs
+      - php
+      - cpp
+      - python
+      - mongodb
+      - kafka
+      - azure
+
+  - period: 2019 - 2022
     company: Accenture
     logo: accenture.png
     location: Paris, France
     role: Technical Referent
     description:
-      - 🎯 Provide technical leadership to project teams and clients to ensure project goals are met.
-      - ✍🏻 Design and develop cost effective solutions that meet functional, technical and performance requirements.
-      - 📦 Supervise the delivery and deployment in production of an application.
-      - 🔭 Trigger the renovation, simplification and automation of processes and tools.
-      - 🎤 Lead technical and functional presentations.
-      -
-      - 📱 Worked for Orange on the fullstack Java development of the consumer order taking application and APIs in an Agile team of 80 people.
+      - 📱 Worked for Orange on the fullstack Java development of the customers order taking application and APIs in an Agile team of 80 people.
+      - 🔧 Divided by 2 the time of the continuous integration pipeline.
+      - 🏆 Led my team of 8 people to victory in a coding competition.
+      - 🌱 In charge of spreading GreenIT awareness and practices.
       - 🚗 Worked for Renault-Nissan UK on the design and development of cloud infrastructure and continuous deployment process in AWS ECS.
       - 💳 Worked for BNP Paribas on the implementation of AI APIs for signature detection on contractual documents.
     certs:
